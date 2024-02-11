@@ -1,4 +1,4 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
     <head>
@@ -6,36 +6,91 @@
 
         <title></title>
         
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="misEstilos.css">
+
+
+        <style>
+            .bloque_1{
+                display: flex;
+                justify-content: center;
+            }
+
+          
+
+        </style>
+
     </head>
     <body>
+
+        <h1 align="center" id="demo"> Breaking Bad - Que comience el juego!</h1>
+        <div class="bloque_1">
     
-        <h3> Breaking Bad - Que comience el juego!</h3>
-        <br>
-        <form name="primero" method="post" action="mailto: raul.rodriguez@proeducaglobal.com">
-            <br> Datos personales
-            <br>Nombre <input type="text" name="" id="" required>
-            <br> Apellidos <input type="text" name="" id="" required>
-            <br> Dirección Postal <input type="text", name="", id="">
-            <br> Código Postal <input type="number", name="", id="">
-            <br> Ciudad <input type="text", name="", id = "">
-            <br> DNI <input type="number", name="", id="">
-            <br> Email <input type="email", name="", id="" required>
+            
+           <br>
+            <br><form name="primero" method="post" action="mailto: raul.rodriguez@proeducaglobal.com">
+                <br> <h2>Datos personales</h2>
+                <br> Nombre  <input  type="text" name="" id="" required >
+                <br><br> Apellidos <input type="text" name="" id="" required>
+                <br><br> Dirección Postal <input type="number", name="", id="">
+                <br><br> Código Postal <input type="number", name="", id="">
+                <br><br> Ciudad <input type="text", name="", id = "">
+                <br><br> DNI <input type="number", name="", id="">
+                <br><br> Email <input type="email", name="", id="" placeholder="ejemplo@mail.es">
+            
+                <br><br> ¿Qué pronombre te representa? 
+                <br><input type="radio" name ="pronombre" id="" value="1"> Ella
+                <br><input type="radio" name ="pronombre" id="" value="2"> Él
+                <br><input type="radio" name ="pronombre" id="" value="3"> Elle
+                <br><input type="radio" name ="pronombre" id="" value="4"> Otro
+                <br><input type="radio" name ="pronombre" id="" value="5"> Prefiero no decirlo
+
+
+                <br><br> Fecha de nacimiento <br><input type="date" min="1900-01-01" max="2023-12-30">
+                <br><br> Desplegable 
+                    <select name = "personajes" id="">
+                        <option value="1"> Jessie Pinkman</option>
+                        <option value="2"> Walter White</option>
+                        <option value="3"> Sauld Goodman</option>
+                        <option value="4"> Gustavo Fring</option>
+                        <option value="5"> Pollos Hermanos</option>
+                        <option value="5"> Otros personajes</option>
+                    </select>
+             
+
+                <br><br> Caja de comentarios 
+                <br><textarea name="comentarios" id="" rows="7" cols="60"></textarea>
+
+
+
+                
+                <button class="button-32" onclick="cambiarTexto()"> El botón</button>
+                <br><br> <input type="file" name="" id="" accept=".pdf, .jpg, .png, .doc, .txt, .csv">
+                <br> <br> <input type="submit" value="enviar">
+                <br><br> <input type="reset" value="eliminar">
+                
+            </form>
+
            
-            <br> Sexo <!-- Selección de hombre-mujer-->
-            <br> Fecha de nacimiento <!--- Calendario -->
-            <br> Desplegable <!-- Jessie Pinkman, Walter White, Saul Goodman, Gustavo Fring, Pollos Hermanos, Otros personajes-->
 
-            <br> Caja de comentarios 
+           
 
 
 
-            <br> <button  onclick="alert('Heeeey')"></button>
-            <br> <input type="file" name="" id="" accept=".pdf, .jpg, .png, .doc, .txt, .csv">
-            <br> <input type="submit" value="enviar">
-            <br> <input type="reset" value="eliminar">
-                    
-        </form>
+        </div>
+
+        <script>
+            function cambiarTexto() {
+                if (document.getElementById("demo").innerHTML == "¡El texto ha sido cambiado!"){
+                    // Cambiar el texto después de 2 segundos
+                    setTimeout(function() {
+                        document.getElementById("demo").innerHTML = "Cambiazo!!";
+                    }, 1000); // 2000 milisegundos = 2 segundos
+                }else{
+                    document.getElementById("demo").innerHTML = "¡El texto ha sido cambiado!";
+                }
+                alert('Heeeey')
+            }
+        </script>
 
     </body>
 </html>
