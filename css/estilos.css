@@ -1,0 +1,124 @@
+
+body {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    padding: 100px;
+
+}
+
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#texto_blanco {
+    color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+#contenedor_1{
+    justify-content: "center";
+    display: "flex";
+}
+
+
+/* ESTILOS DE LA TABLA PERIÓDICA */
+
+.fondo_verde {
+    background-color: darkolivegreen;
+    background-image: none;
+  
+  }
+
+.texto_rojo {
+    font-size: 20px;
+    color: red;
+
+}
+
+table {
+    background-color: #111111;
+    border:2px solid;
+    border-color:#111111;
+    font-family: Arial, Helvetica, sans-serif, bold;
+    font-size: 30px;
+
+    color:#111111;
+    margin: 20px;
+}
+
+td {
+    border:2px solid;
+    border-color:#111111;
+    text-align:center;
+    min-width:50px;
+    background-color: rgb(143, 158, 143);
+    padding: 5px;
+    
+}
+
+td img {
+    width: 100%;
+    height: auto; /* Para mantener la proporción de la imagen */
+    max-height: 50px;
+}
+
+
+#primer_verde{
+    background-color:rgb(118, 182, 0);
+}
+
+#amarillito{
+    background-color:rgb(205, 206, 205);
+}
+
+
+
+#verde_oscuro{
+    background-color:rgb(57, 68, 59);
+}
+
+
+#otro_verde{
+    background-color:rgb(102, 133, 45);
+}
+
+#elquenoesnimuyoscuronimuyclaro{
+    background-color:rgb(178, 216, 107);
+}
+
+#perocuantostonosdeverdehay{
+    background-color:rgb(100, 119, 66);
+}
+
+#morado{
+    background-color:rgb(154, 76, 170);
+}
+
+
+#tabla_inferior td{
+    background-color:yellowgreen;
+}
+
+.fila_8{
+    background-color:rgb(200, 218, 166);
+}
+
+.fila_8 td{
+    background-color:rgb(200, 218, 166);
+}
+
+
+.borde-quitado {
+    border: 3px;
+    border-color: #111111;
+    background-color: #111111;
+}
+
+
+
