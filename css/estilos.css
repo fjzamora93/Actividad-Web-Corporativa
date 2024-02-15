@@ -3,8 +3,58 @@ body {
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     padding: 100px;
-
+    
 }
+
+
+.borde-quitado {
+    border: 3px;
+    border-color: #111111;
+    background-color: #111111;
+}
+
+
+
+#celda-morado{
+    background-color:rgb(154, 76, 170);
+}
+
+#celdas-tabla-inf td{
+    background-color:yellowgreen;
+}
+
+
+#celda-verde-1{
+    background-color:rgb(118, 182, 0);
+}
+
+#celda-verde-2{
+    background-color:rgb(178, 216, 107);
+}
+
+#celda-verde-3{
+    background-color:rgb(102, 133, 45);
+}
+
+#celda-verde-amar{
+    background-color:rgb(205, 206, 205);
+}
+
+.celda-verde-claro td{
+    background-color:rgb(200, 218, 166);
+}
+
+#celda-verde-osc{
+    background-color:rgb(57, 68, 59);
+}
+
+
+#celda-verde-osc-2{
+    background-color:rgb(100, 119, 66);
+}
+
+
+
 
 
 div{
@@ -15,11 +65,13 @@ div{
     text-align: center;
 }
 
-#texto_blanco {
-    color:whitesmoke;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+
+@font-face{
+    font-family: "BreakingBad";
+    src: url('../assets/Breaking\ Bad.ttf')
 }
+
+
 
 #contenedor_1{
     justify-content: "center";
@@ -32,24 +84,30 @@ div{
 .fondo_verde {
     background-color: darkolivegreen;
     background-image: none;
-  
   }
 
-.texto_rojo {
-    font-size: 20px;
-    color: red;
 
+.poster{
+   border: 10px solid black; 
+   width:700px; 
+   height: 300px;   
+   border-color: brown; 
+   border-width: 10px; 
+   border-radius: 10px;
 }
+
+
+
 
 table {
     background-color: #111111;
     border:2px solid;
     border-color:#111111;
     font-family: Arial, Helvetica, sans-serif, bold;
+    font-weight: bold;
     font-size: 30px;
-
     color:#111111;
-    margin: 20px;
+    margin: 40px;
 }
 
 td {
@@ -57,9 +115,9 @@ td {
     border-color:#111111;
     text-align:center;
     min-width:50px;
+    max-width:50px;
     background-color: rgb(143, 158, 143);
     padding: 5px;
-    
 }
 
 td img {
@@ -68,57 +126,31 @@ td img {
     max-height: 50px;
 }
 
-
-#primer_verde{
-    background-color:rgb(118, 182, 0);
+.titulo-tabla {
+    font-family: 'BreakingBad';
+    color: whitesmoke;
+    font-size: 90px;
+    line-height: 0.7;
+    display: inline-block;
 }
 
-#amarillito{
-    background-color:rgb(205, 206, 205);
-}
-
-
-
-#verde_oscuro{
-    background-color:rgb(57, 68, 59);
-}
-
-
-#otro_verde{
-    background-color:rgb(102, 133, 45);
-}
-
-#elquenoesnimuyoscuronimuyclaro{
-    background-color:rgb(178, 216, 107);
-}
-
-#perocuantostonosdeverdehay{
-    background-color:rgb(100, 119, 66);
-}
-
-#morado{
-    background-color:rgb(154, 76, 170);
+#texto_blanco {
+    color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 
-#tabla_inferior td{
-    background-color:yellowgreen;
-}
-
-.fila_8{
-    background-color:rgb(200, 218, 166);
-}
-
-.fila_8 td{
-    background-color:rgb(200, 218, 166);
+#texto-rojo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: red;
+    display: inline;
 }
 
 
-.borde-quitado {
-    border: 3px;
-    border-color: #111111;
-    background-color: #111111;
+#texto_negro{
+    color: black;
 }
-
-
 
