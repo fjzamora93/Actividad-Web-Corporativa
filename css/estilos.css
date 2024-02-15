@@ -3,7 +3,6 @@ body {
     background-image: url(../img/fondo.jpg);
     background-size: cover;
     padding: 100px;
-    
 }
 
 
@@ -14,6 +13,7 @@ body {
 }
 
 
+/*COLORES DE LAS CELDAS */
 
 #celda-morado{
     background-color:rgb(154, 76, 170);
@@ -48,13 +48,27 @@ body {
     background-color:rgb(57, 68, 59);
 }
 
-
 #celda-verde-osc-2{
     background-color:rgb(100, 119, 66);
 }
 
 
 
+.contenedor_1{
+    justify-content: "center";
+    display: "flex";
+    
+}
+
+.contenedor_1 form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+.contenedor_1 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
 
 
 div{
@@ -66,25 +80,27 @@ div{
 }
 
 
+.fondo_verde {
+    background-color: #0c3e11;
+    background-image: none;
+  }
+
 @font-face{
     font-family: "BreakingBad";
     src: url('../assets/Breaking\ Bad.ttf')
 }
 
-
-
-#contenedor_1{
-    justify-content: "center";
-    display: "flex";
+input[type="number"]{
+    width:60px;
 }
 
+#imagen-celda{
+    background-image: url("../img/Tabla\ Periódica/hankschrader.png");
+    background-size: 98%; /* Si quisiera cubrir pondría COVER, pero para mantener bien el ajuste lo pongo al 98% */
+    background-position: center; /* Centrar imagen */
+    padding: 4px;
+}
 
-/* ESTILOS DE LA TABLA PERIÓDICA */
-
-.fondo_verde {
-    background-color: darkolivegreen;
-    background-image: none;
-  }
 
 
 .poster{
@@ -93,7 +109,8 @@ div{
    height: 300px;   
    border-color: brown; 
    border-width: 10px; 
-   border-radius: 10px;
+   border-radius: 22px;
+   border-style: outset;
 }
 
 
@@ -108,16 +125,19 @@ table {
     font-size: 30px;
     color:#111111;
     margin: 40px;
+    
 }
 
 td {
     border:2px solid;
     border-color:#111111;
     text-align:center;
-    min-width:50px;
-    max-width:50px;
+    width:50px;
+    height: 50px;
+    max-height: 50px;
     background-color: rgb(143, 158, 143);
-    padding: 5px;
+   
+    line-height: 0.8;
 }
 
 td img {
@@ -126,20 +146,6 @@ td img {
     max-height: 50px;
 }
 
-.titulo-tabla {
-    font-family: 'BreakingBad';
-    color: whitesmoke;
-    font-size: 90px;
-    line-height: 0.7;
-    display: inline-block;
-}
-
-#texto_blanco {
-    color:whitesmoke;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 25px;
-}
 
 
 #texto-rojo {
@@ -153,4 +159,22 @@ td img {
 #texto_negro{
     color: black;
 }
+
+#texto-chico{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 6px;
+    line-height: 0.8;
+}
+
+/*Web index.html → Facilitada por el cliente. Breaking Ba*/
+#titulo-tabla {
+    font-family: 'BreakingBad';
+    color: whitesmoke;
+    font-size: 40px;
+    line-height: 0.7;
+    display: inline-block;
+}
+
+
+
 

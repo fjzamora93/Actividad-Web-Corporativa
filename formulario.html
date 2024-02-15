@@ -7,46 +7,56 @@
         <title></title>
         <link href="css/estilos.css" rel="stylesheet">
 
+        <!---El título del Formulario será: Breaking Bad – Que comience el juego!
+        No sé si se refiere al título de la página, o al título del Title, pero lo pongo en los dos lados-->
 
-        <style>
-            .bloque_1{
-                display: flex;
-                justify-content: center;
-            }
+        <title>Breaking Bad - Que comience el juego! </title>
 
-          
+        <link rel="icon" href="img/icon.png" type="image/x-icon"> 
 
-        </style>
+        <!---
+        TIPOGRAFÍAS
+        -Resto de webs: Helvética.
+        -Tamaño Fuentes grandes: 14 pixels.
+        -Tamaño Fuentes pequeñas: de 10 pixels
+
+        -->
 
     </head>
     <body>
         
+        <div class="contenedor_1">
+       
 
-        <h1 align="center" id="demo"> Breaking Bad - Que comience el juego!</h1>
-        <div class="bloque_1">
-    
+            <h3> Breaking Bad - Que comience el juego!</h3>
             
-           <br>
-            <br><form name="primero" method="post" action="mailto: raul.rodriguez@proeducaglobal.com">
-                <br> <h2>Datos personales</h2>
-                <br> Nombre  <input  type="text" name="" id="" required >
+            <form name="primero" method="post" action="mailto: raul.rodriguez@proeducaglobal.com">
+                <h3> Datos personales</h3>
+                <!---Datos Personales: Nombre, Apellidos, Dirección Postal (Calle, Número, Piso, Código Postal, Ciudad, DNI y Correo Electrónico.-->
+
+                <br><br> Nombre  <input  type="text" name="" id="" minlength="3" required >
                 <br><br> Apellidos <input type="text" name="" id="" required>
-                <br><br> Dirección Postal <input type="number", name="", id="">
-                <br><br> Código Postal <input type="number", name="", id="">
-                <br><br> Ciudad <input type="text", name="", id = "">
-                <br><br> DNI <input type="number", name="", id="">
-                <br><br> Email <input type="email", name="", id="" placeholder="ejemplo@mail.es">
-            
+
+                <br><br>Dirección Postal <input type="text", name="", id="", placeholder="Calle / Nº / Piso / Letra">
+                <br><br>CP <input type="number", name="", id="" maxlength="5" >
+                <br><br>Ciudad <input type="text", name="", id = "">
+
+                <br><br> DNI <input type="text", name="", id="" minlength="9">
+                <br><br> Email <input type="email", name="", id="" placeholder="ejemplo@mail.es" required>
+                
+                <!--- El sexo -->
                 <br><br> ¿Qué pronombre te representa? 
                 <br><input type="radio" name ="pronombre" id="" value="1"> Ella
                 <br><input type="radio" name ="pronombre" id="" value="2"> Él
                 <br><input type="radio" name ="pronombre" id="" value="3"> Elle
                 <br><input type="radio" name ="pronombre" id="" value="4"> Otro
-                <br><input type="radio" name ="pronombre" id="" value="5"> Prefiero no decirlo
+       
 
 
                 <br><br> Fecha de nacimiento <br><input type="date" min="1900-01-01" max="2023-12-30">
-                <br><br> Desplegable 
+
+                <!--- El sexo -->
+                <br><br> 
                     <select name = "personajes" id="">
                         <option value="1"> Jessie Pinkman</option>
                         <option value="2"> Walter White</option>
@@ -57,40 +67,18 @@
                     </select>
              
 
-                <br><br> Caja de comentarios 
-                <br><textarea name="comentarios" id="" rows="7" cols="60"></textarea>
+                <!--- Caja de comentarios-->
+                <br><textarea name="comentarios" id="" rows="7" cols="60" placeholder="Caja de Comentarios en el que el usuario pueda escribir el texto que quiera"></textarea>
 
-
-
-                
-                <button class="button-32" onclick="cambiarTexto()"> El botón</button>
+                <!--- Botón de Enviar, Botón Borrar (Reset) y Botón de Adjuntar Archivos  -->
                 <br><br> <input type="file" name="" id="" accept=".pdf, .jpg, .png, .doc, .txt, .csv">
                 <br> <br> <input type="submit" value="enviar">
                 <br><br> <input type="reset" value="eliminar">
                 
             </form>
 
-           
-
-           
-
-
-
         </div>
 
-        <script>
-            function cambiarTexto() {
-                if (document.getElementById("demo").innerHTML == "¡El texto ha sido cambiado!"){
-                    // Cambiar el texto después de 2 segundos
-                    setTimeout(function() {
-                        document.getElementById("demo").innerHTML = "Cambiazo!!";
-                    }, 1000); // 2000 milisegundos = 2 segundos
-                }else{
-                    document.getElementById("demo").innerHTML = "¡El texto ha sido cambiado!";
-                }
-                alert('Heeeey')
-            }
-        </script>
 
     </body>
 </html>
