@@ -51,8 +51,6 @@ body {
     background-color:rgb(100, 119, 66);
 }
 
-
-
 .contenedor_1{
     justify-content: "center";
     display: "flex";
@@ -69,7 +67,6 @@ body {
     font-size: 14px;
 }
 
-
 div{
     display: flex;
     justify-content: center;
@@ -78,7 +75,6 @@ div{
     text-align: center;
 }
 
-
 .fondo_verde {
     background-color: #0c3e11;
     background-image: none;
@@ -86,7 +82,7 @@ div{
 
 @font-face{
     font-family: "BreakingBad";
-    src: url('../assets/Breaking\ Bad.ttf')
+    src: url('../fonts/Breaking\ Bad.ttf');
 }
 
 input[type="number"]{
@@ -100,8 +96,6 @@ input[type="number"]{
     padding: 4px;
 }
 
-
-
 .poster{
    border: 10px solid black; 
    width:700px; 
@@ -111,9 +105,6 @@ input[type="number"]{
    border-radius: 22px;
    border-style: outset;
 }
-
-
-
 
 table {
     background-color: #111111;
