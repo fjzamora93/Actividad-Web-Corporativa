@@ -36,7 +36,7 @@ body {
 }
 
 #celda-verde-amar{
-    background-color:rgb(205, 206, 205);
+    background-color:rgb(235, 246, 205);
 }
 
 .celda-verde-claro td{
@@ -47,19 +47,30 @@ body {
     background-color:rgb(57, 68, 59);
 }
 
+.celda-verde-inf{
+    background-color:rgb(59, 121, 70);
+}
+
+.celda-verde-inf td{
+    background-color:rgb(59, 121, 70);
+}
+
+
+
 #celda-verde-osc-2{
     background-color:rgb(100, 119, 66);
 }
 
-.contenedor_1{
-    justify-content: "center";
-    display: "flex";
+.contenedor {
+    margin: auto;
     
 }
 
 .contenedor_1 form{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
+    width : 600px;
+    margin: auto;
 }
 
 .contenedor_1 h3{
@@ -68,10 +79,7 @@ body {
 }
 
 div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    margin: auto;
     text-align: center;
 }
 
@@ -114,7 +122,9 @@ table {
     font-weight: bold;
     font-size: 30px;
     color:#111111;
-    margin: 40px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
     
 }
 
